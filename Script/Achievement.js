@@ -341,3 +341,6 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+
+ScrollReveal().reveal('.image-container', { delay: 1000});
+ScrollReveal().reveal('.image-container2',{ delay: 2000});

@@ -1,0 +1,614 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Asset/font/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    top: 0;
+    transition: all 0.25s;
+    font-family: Montserrat;
+    height:100%;
+    /* z-index: 1; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* z-index: 1; */
+    /* margin-top: 20px; */
+    /* top: 20px; */
+    /* background-color: transparent; */
+    /* background-color: red; */
+}
+
+#header h1{
+    padding-left: 20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode2 img{
+    transition: all 0.25s;
+    filter: invert(100%);
+
+}
+.dark-mode3 .desc-content1 img{
+    transition: all 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode4 .github-logo{
+    transition: all 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode4 .github-logo2{
+    transition: all 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode4 .name{
+    transition: all 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode5 .card{
+    color: white;
+    background-color: #000000;
+    transition: 0.25s;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode5 .card a{
+    transition: 0.25s;
+    filter: invert(100%);
+}
+.dark-mode5 .card .desc-card{
+    transition: 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode6 .github-logo3{
+    transition: 0.25s;
+    filter: invert(100%);
+}
+
+.dark-mode7 #particles-js{
+    /* transition: 0.25s; */
+    filter: invert(100%);
+}
+
+.dark-mode8 .github-logo4{
+    transition: all 0.25s;
+    filter: invert(100%);
+}
+
+.headerlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    gap: 5rem;
+}
+.codinglogo{
+    width: 45px;
+    height: 28px;
+}
+
+.Headerlogo{
+    /* position: absolute; */
+    /* z-index: 99; */
+    width: 40px;
+    height:40px;
+}
+
+.kotaklogo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.kotaklogo img{
+    position: relative;
+    z-index: 1;
+}
+
+.kotaklogoo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s;
+    padding-right: 20px;
+    
+}
+
+.kotaklogoo img{
+    position: absolute;
+    z-index: 1;
+    transition: all 0.25s;
+
+}
+.kotaklogoo img:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+.kotaklogo:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+#footer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+.footerLogo{
+    width: 40px;
+    height:40px;
+}
+
+.kotaklogo:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+#content1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-content1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.desc-content1 h1{
+    font-size: 36px;;
+}
+
+.desc-content1 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: grey;
+    font-size: 18px;
+    transition: all 0.25s;
+}
+
+.desc-content1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.profile-content1 img{
+    /* position: relative; */
+
+    z-index: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.desc-content1 .hoverresume {
+    z-index: 1;
+}
+
+.hoverresume:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+#content2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 4rem;
+}
+
+.project-picture1{
+    width: 480px;
+}
+
+.project-picture1 img{
+    width: 480px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.desc-project1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:justify;
+}
+.desc-project1 h1{
+    font-size: 36px;
+}
+.desc-project1 p{
+    font-size: 18px;
+}
+
+.progamming-language{
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    
+}
+.progamming-language-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: auto;
+    height:30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: #27272A;
+    color: white;
+    /* cursor: default; */
+}
+
+.progamming-language-button p{
+    width: auto;
+    font-size: 15px;
+}
+
+.github-logo {
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 80%;
+}
+
+.github-logo a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black ;
+    transition: 0.5s;
+}
+
+.github-logo4 {
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 80%;
+}
+
+.github-logo4 a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black ;
+    transition: 0.5s;
+}
+
+.github-logo4 img{
+    width: 30px;
+    height: 30px;
+}
+
+.github-logo4 a:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+.github-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.github-logo a:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+#content3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem; 
+}
+
+#content4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem;
+}
+
+#last-desain-project h1{
+    font-size: 36px;
+}
+
+.desc-project2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+
+
+
+.desc-project2 p{
+    font-size: 18px;
+}
+
+.desc-project2 h1{
+    font-size: 36px;
+}
+
+.project-picture2{
+    width: 100%;
+}
+
+.project-picture2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+#last-desain-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.card-content1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* transition: 0.5s; */
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    
+    position: relative;
+
+    transition: 0.5s;
+    /* background-color: transparent; */
+    /* text-align: justify; */
+}
+
+.card-content1 .card:hover{
+    transform: scale(1.05); 
+    cursor: pointer;
+    /* background-color: black; */
+}
+
+.card h1{
+    font-size: 36px;
+}
+
+.desc-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.card .desc-card p{
+    font-size: 18px;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.card h1{
+    background:
+      linear-gradient(
+        to right,
+        white,
+        white
+      ),
+      linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.card h1:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.github-logo2 {
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+}
+
+.github-logo2 a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black ;
+    transition: 0.5s;
+}
+
+.github-logo2 img{
+    width: 30px;
+    height: 30px;
+}
+
+.github-logo2 a:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 9999;
+    /* Adjust the z-index value as needed */
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #000000;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+::-webkit-scrollbar :hover{
+    cursor: pointer;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: white; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000; 
+    border: 1px solid;
+    border-color: white;
+    border-radius: 6px;
+}
+
+.name{
+    text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+      white,
+      white
+    ),
+    linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+    color: #808080;
+}
+
+.name:hover {
+    background-size: 0 3px, 100% 3px;
+}

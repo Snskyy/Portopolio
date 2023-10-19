@@ -1,0 +1,40 @@
+.content{
+    /* width: 70%; */
+    /* height: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.5s;
+    gap: 2rem;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.content img{
+    width: auto;
+    height: 300px;
+    transition: all 0.5s;
+}
+
+.content a{
+    text-decoration: none;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    cursor:  default;
+}
+
+.content p{
+    color: black;
+    font-size: 18px;
+}
+
+.image-hover:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: all 0.5s;
+}

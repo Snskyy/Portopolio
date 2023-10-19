@@ -1,108 +1,84 @@
-const sun = "./Asset/Sun.png";
-const moon = "./Asset/Moon.png"
+const sun = "../Asset/Sun.png";
+const moon = "../Asset/Moon.png";
+var theme = "dark";
 const container = document.getElementsByClassName("kotaklogoo")[0];
-console.log(container);
 const themeIcon = document.getElementById("theme-icon");
 container.addEventListener("click", setTheme);
 
-var darkmode = localStorage.getItem("theme") == null ? "light" : localStorage.getItem("theme")
-setCurrentTheme()
+var darkmode =
+  localStorage.getItem("theme") == null
+    ? "light"
+    : localStorage.getItem("theme");
+setCurrentTheme();
 
-function setCurrentTheme(){
-    console.log(darkmode);
-    switch(darkmode){
-        case "dark" :
-            setDark();
-            
-            break;
-        case "light":
-            setLight();
-            
-            break;
-    }
+function setCurrentTheme() {
+  console.log(darkmode);
+  switch (darkmode) {
+    case "dark":
+      setDark();
+      break;
+    case "light":
+      setLight();
+      break;
+  }
 }
 
 function setTheme() {
-    switch (darkmode) {
+  switch (darkmode) {
     case "dark":
-        darkmode = "light";
-        setLight();
-        setLightPartikel();
-        
-        localStorage.setItem('theme', darkmode);
-        break;
+      darkmode = "light";
+      setLight();
+      setLightPartikel();
+      localStorage.setItem("theme", darkmode);
+      break;
     case "light":
-        darkmode = "dark";
-        setDark();
-        setDarkPartikel();
-
-        localStorage.setItem('theme', darkmode);
-        break;
-    }
+      darkmode = "dark";
+      setDark();
+      setDarkPartikel();
+      localStorage.setItem("theme", darkmode);
+      break;
+  }
 }
 
 function setLight() {
-    themeIcon.src = sun;
-    myFunction();
+  themeIcon.src = sun;
+  myFunction();
 }
 
 function setDark() {
-    themeIcon.src = moon;
-    myFunction();
+  themeIcon.src = moon;
+  myFunction();
 }
 
 function myFunction() {
-   var element = document.body;
-   var element2 = document.getElementById("header");
-   var element3 = document.getElementById("footer");
-   var element4 = document.getElementById("content1");
-   var element5 = document.getElementById("content2");
-   var element6 = document.getElementById("content3");
-   var element7 = document.getElementById("content4");
-   var element8 = document.getElementById("last-desain-project");
-   var element9 = document.getElementById("particles-js");
-   var element10 = document.getElementById("waves");
-   console.log(element9);
-   if(darkmode == "dark"){
+  var element = document.body;
+  var element2 = document.getElementById("header");
+  var element3 = document.getElementById("footer");
+  var element5 = document.getElementById("particles-js");
+  var element6 = document.getElementById("content");
+  var element7 = document.getElementById("waves");
+
+  
+
+
+  if (darkmode == "dark") {
     element.classList.add("dark-mode");
     element2.classList.add("dark-mode2");
     element3.classList.remove("dark-mode2");
-    element4.classList.add("dark-mode3");
-    element5.classList.add("dark-mode4");
-    element6.classList.add("dark-mode9");
-    element7.classList.add("dark-mode4");
-    element8.classList.add("dark-mode5");  
-    element9.classList.add("dark-mode7");  
-   
-    element10.classList.remove("dark-mode8");  
-  } else{
+    element5.classList.add("dark-mode7");
+    element6.classList.add("dark-mode8");
+    element7.classList.remove("dark-mode8");
+    
+  } else {
+    element3.classList.add("dark-mode2");
     element.classList.remove("dark-mode");
     element2.classList.remove("dark-mode2");
-
-    element3.classList.add("dark-mode2");
-    element4.classList.remove("dark-mode3");
-    element5.classList.remove("dark-mode4");
-    element6.classList.remove("dark-mode9");
-    element7.classList.remove("dark-mode4");
-    element8.classList.remove("dark-mode5");  
-    element9.classList.remove("dark-mode7"); 
-    element10.classList.add("dark-mode8");   
-
-   
-
-   }
- 
-}
-
-
-const app = document.getElementById('app');
-
-function loadPage(pageName) {
-    fetch(pageName + '.html') // Misalnya, dapatkan konten dari file HTML yang sesuai
-        .then(response => response.text())
-        .then(content => {
-            app.innerHTML = content;
-        });
+    
+    element5.classList.remove("dark-mode7");
+    element6.classList.remove("dark-mode8");
+    
+    element7.classList.add("dark-mode8");
+  }
 }
 
 

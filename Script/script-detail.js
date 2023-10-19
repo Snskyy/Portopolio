@@ -56,19 +56,24 @@ function myFunction() {
   var element3 = document.getElementById("footer");
   var element4 = document.getElementById("title-desc");
   var element5 = document.getElementById("particles-js");
+  var element6 = document.getElementById("waves");
 
   if (darkmode == "dark") {
     element.classList.add("dark-mode");
     element2.classList.add("dark-mode2");
-    element3.classList.add("dark-mode2");
+    element3.classList.remove("dark-mode2");
+    
     element4.classList.add("dark-mode6");
     element5.classList.add("dark-mode7");
+    
+    element6.classList.remove("dark-mode8");
   } else {
     element.classList.remove("dark-mode");
     element2.classList.remove("dark-mode2");
-    element3.classList.remove("dark-mode2");
+    element3.classList.add("dark-mode2");
     element4.classList.remove("dark-mode6");
     element5.classList.remove("dark-mode7");
+    element6.classList.add("dark-mode8");
   }
 }
 
